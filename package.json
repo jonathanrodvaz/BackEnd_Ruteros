@@ -1,0 +1,38 @@
+{
+  "name": "backend_ruteros",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000B\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000_\u0000r\u0000u\u0000t\u0000e\u0000r\u0000o\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint:fix": "eslint ./src --ext .jsx,.js, --quiet --fix --ignore-path ./.gitignore",
+    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,css,md,json}\" ",
+    "lint": "npm run lint:format && npm run lint:fix "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "jest": "^29.6.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.0",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cloudinary": "^1.37.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.3.3",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemailer": "^6.9.3",
+    "validator": "^13.9.0"
+  }
+}
